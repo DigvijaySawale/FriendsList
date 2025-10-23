@@ -70,3 +70,4 @@ group :development, :test do
   gem 'pry-rails'   # enhances Rails console with pry
   gem 'pry-byebug'  # allows step-by-step debugging
 end
+gem 'devise', '~> 4.9', '>= 4.9.4'

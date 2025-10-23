@@ -34,6 +34,10 @@
     </nav>
 
     <main class="container mt-4">
+      <% if notice %>
+        <%= render 'layouts/alerts'%>
+      <%end%>
+
       <%= yield %>
     </main>
 
