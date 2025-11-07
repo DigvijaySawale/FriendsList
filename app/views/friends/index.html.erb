@@ -13,6 +13,7 @@
       <th>Phone</th>
       <th>Social</th>
       <th>Actions</th>
+      <th>User Id</th>
     </tr>
   </thead>
   <tbody id="friends">
@@ -23,6 +24,7 @@
         <td><%= friend.email %></td>
         <td><%= friend.phone %></td>
         <td><%= friend.social %></td>
+        <td><%= friend.user_id %></td>
         <td>
           <%= link_to "Show", friend %> |
           <%= link_to "Edit", edit_friend_path(friend) %> 

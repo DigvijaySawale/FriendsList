@@ -36,6 +36,12 @@
     <%= form.text_field :social, class:"form-control", placeholder:"Social" %>
   </div>
 
+  <div class="mb-3">
+    <% form.label :user_id, style: "display: block" %>
+    <%= form.number_field :user_id, id: :friend_user_id, class:"form-control", value:current_user.id, type: :hidden %>
+  </div>
+  <%# <%= current_user.id %> 
+
   <div>
     <%= form.submit class:'btn btn-secondary' %>
   </div>
